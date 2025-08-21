@@ -22,8 +22,15 @@ import java.util.Map;
  * Input: nums = [3,3], target = 6
  * Output: [0,1]
  *
- * Time: O(n)
- * Memory/Space: O(n)
+ * Time:
+ * Single pass through array → O(n)
+ * HashMap lookup → O(1) average
+ * Overall → O(n)
+ *
+ * Memory/Space:
+ * HashMap stores all numbers → O(n)
+ *
+ * Pros: Works on unsorted arrays. Single pass, very efficient. No need to sort
  */
 
 public class TwoSumUsingMap {

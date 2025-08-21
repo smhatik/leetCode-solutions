@@ -25,6 +25,10 @@ import java.util.Arrays;
  * Two pointers → O(n)
  * Overall → O(n log n)
  * Memory/Space: O(1) if we sort in-place
+ *
+ * Pros:Works well if array is already sorted. Very memory efficient
+ *
+ * Cons: Modifies array (sorting)
  */
 public class TwoSumUsingPointer {
 
