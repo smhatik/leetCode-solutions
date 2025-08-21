@@ -21,8 +21,10 @@ import java.util.Arrays;
  * Input: nums = [3,3], target = 6
  * Output: [0,1]
  *
- * Time: O(n)
- * Memory/Space: O(n)
+ * Time: Sorting → O(n log n)
+ * Two pointers → O(n)
+ * Overall → O(n log n)
+ * Memory/Space: O(1) if we sort in-place
  */
 public class TwoSumUsingPointer {
 
