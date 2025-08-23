@@ -31,6 +31,33 @@ package com.skytech.leetcode.soln.palindrome;
  *
  * clean and optimal solution using reverse half of the number
  *
+ *
+ * Why this is best:
+ *
+ * ✅ No extra space → avoids using a string or char array
+ *
+ * ✅ Efficient → we only reverse half of the digits, not the entire number
+ *
+ * ✅ Time Complexity → O(log₁₀(n)) (since we process digits)
+ *
+ * ✅ Space Complexity → O(1) constant
+ *
+ * 👉 Example:
+ *
+ * x = 1221
+ *
+ * reverse half → 12
+ *
+ * remaining half → 12 → palindrome ✅
+ *
+ * x = 12321
+ *
+ * reverse half → 123
+ *
+ * remaining half → 12
+ *
+ * compare 12 == 123/10 → palindrome ✅
+ *
  */
 public class PalindromeNumberWithoutConvert {
     public static boolean isPalindrome(int x) {
